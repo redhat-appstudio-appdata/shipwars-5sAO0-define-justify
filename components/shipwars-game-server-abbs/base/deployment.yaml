@@ -23,7 +23,10 @@ spec:
         app.kubernetes.io/instance: shipwars-game-server-abbs
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:d6ce7c3b5dd8977dc51635e97bc9c399882118b43001cbe4b6827994685f83db
+      - env:
+        - name: CLUSTER_NAME
+          value: Stone Soup
+        image: quay.io/redhat-appstudio/user-workload@sha256:d6ce7c3b5dd8977dc51635e97bc9c399882118b43001cbe4b6827994685f83db
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
