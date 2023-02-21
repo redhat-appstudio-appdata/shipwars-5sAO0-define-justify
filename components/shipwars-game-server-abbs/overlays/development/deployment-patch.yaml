@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: shipwars-game-server-abbs
+  namespace: eshortis-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d6ce7c3b5dd8977dc51635e97bc9c399882118b43001cbe4b6827994685f83db
+        name: container-image
+        resources: {}
+status: {}
