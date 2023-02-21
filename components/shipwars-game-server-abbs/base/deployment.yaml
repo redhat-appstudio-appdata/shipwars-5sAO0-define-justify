@@ -26,7 +26,7 @@ spec:
       - env:
         - name: CLUSTER_NAME
           value: Stone Soup
-        image: quay.io/redhat-appstudio/user-workload@sha256:d6ce7c3b5dd8977dc51635e97bc9c399882118b43001cbe4b6827994685f83db
+        image: quay.io/redhat-appstudio/user-workload@sha256:b7a78bbccabbdb00d64356aa8e92644e7097b69a1aa5da5f34a91a9595b38036
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
